@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 class AboutController {
-    public function index() {
+    public function indexAction() {
         echo 'AboutController index()';
     }
 }

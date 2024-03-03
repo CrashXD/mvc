@@ -3,11 +3,11 @@
 namespace App\Controllers;
 
 class ContactsController {
-    public function index() {
+    public function indexAction() {
         echo 'ContactsController index()';
     }
 
-    public function form() {
-        echo 'ContactsController form()';
+    public function testAction() {
+        echo 'ContactsController test()';
     }
 }

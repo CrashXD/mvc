@@ -29,7 +29,7 @@
             if (!isset($this->parts[1])) {
                 $this->parts[1] = 'index';
             }
-            $methodName = $this->parts[1];
+            $methodName = $this->parts[1] . 'Action';
             if (method_exists($controller, $methodName)) {
                 $controller->{$methodName}();
             } else {
