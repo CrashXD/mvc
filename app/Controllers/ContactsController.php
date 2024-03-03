@@ -2,12 +2,21 @@
 
 namespace App\Controllers;
 
+use App\Views\ContactsView;
+
 class ContactsController {
+    private $view;
+
+    public function __construct()
+    {
+        $this->view = new ContactsView();
+    }
+
     public function indexAction() {
-        echo 'ContactsController index()';
+        $this->view->html();
     }
 
     public function testAction() {
-        echo 'ContactsController test()';
+        $this->view->html('test');
     }
 }

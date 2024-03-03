@@ -13,6 +13,5 @@ class HomeController {
 
     public function indexAction() {
         $this->view->html();
-        echo '123';
     }
 }
