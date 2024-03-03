@@ -1,12 +1,8 @@
 <?php
 namespace App\Views;
 
-class ContactsView {
-    private $folder = 'contacts';
+use App\Core\View;
 
-    public function html($template = 'index', $data = []) {
-        $contentFile = 'app/layouts/' . $this->folder . '/' . $template . '.tpl.php';
-        include 'app/layouts/layout.tpl.php';
-        exit;
-    }
+class ContactsView extends View {
+    protected $folder = 'contacts';
 }

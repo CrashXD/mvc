@@ -1,12 +1,8 @@
 <?php
 namespace App\Views;
 
-class AboutView {
-    private $folder = 'about';
+use App\Core\View;
 
-    public function html($template = 'index', $data = []) {
-        $contentFile = 'app/layouts/' . $this->folder . '/' . $template . '.tpl.php';
-        include 'app/layouts/layout.tpl.php';
-        exit;
-    }
+class AboutView extends View {
+    protected $folder = 'about';
 }
