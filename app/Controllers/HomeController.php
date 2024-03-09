@@ -13,9 +13,7 @@ class HomeController extends Controller {
     }
 
     public function indexAction() {
-        $this->view->html('index', [
-            'title' => 'Главная страница',
-            'welcome' => 'Здравствуй, пользователь!',
-        ]);
+        $data = $this->model->getData();
+        $this->view->html('index', $data);
     }
 }
