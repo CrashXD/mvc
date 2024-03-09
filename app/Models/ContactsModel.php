@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-class ContactsModel {
+use App\Core\Model;
+
+class ContactsModel extends Model {
     public function getContacts() {
-        return [
-            'Телефон' => '+7 707 000 33 88',
-            'Email' => 'email@mail.ru',
-        ];
+        $query = $this->db->execute('SELECT * FROM contacts');
+        return $query->fetchAll();
     }
 }

@@ -4,8 +4,8 @@
 
 <?php if (isset($data['contacts'])) : ?>
     <ul>
-        <?php foreach ($data['contacts'] as $contact => $value) : ?>
-            <li><?= $contact ?>: <?= $value ?></li>
+        <?php foreach ($data['contacts'] as $contact) : ?>
+            <li><?= $contact['title'] ?>: <?= $contact['value'] ?></li>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
