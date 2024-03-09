@@ -4,4 +4,5 @@ namespace App\Core;
 
 abstract class Controller {
     protected $view;
+    protected $model;
 }
